@@ -1,0 +1,87 @@
+.BannerCarousel {
+    top: 75px;
+    position: relative;
+}
+.BannerCarousel img {
+    height: 100vh;
+    object-fit: cover;
+    object-position: top;
+    display: inline-block;
+    /* height: auto; */
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.carousel .control-dots .dot {
+    height: 12px;
+    width: 12px;
+    box-shadow: 0px 0px 0px 0.5px rgba(0,0,0,0.9);
+}
+
+.carousel .control-dots .dot.selected, .carousel .control-dots .dot:hover {
+    background: #f38de3;
+}
+.ShopNowButton a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+    font-family: "DM Sans",sans-serif;
+    padding: 17px 36.5px;
+    font-weight: 500;
+    border-radius: 50px;
+    display: inline-block;
+    padding: 17px 36px;
+    margin: 0;
+    background-color: #f38de3;
+    color: #000;
+    border: 0;
+    font-weight: 500;
+    transition: all .5s ease-in-out;
+}
+
+.ShopNowButton a:hover {
+    background-color: #ec411f;
+    color: #fff;
+}
+
+.ShopNowButton {
+    position: absolute;
+    top: auto;
+    bottom: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1199px) {
+    .BannerCarousel img {
+        height: 55vw;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .BannerCarousel {
+        top: 52px;
+    }
+
+    .BannerCarousel img {
+        height: 550px;
+    }
+
+    .ShopNowButton a {
+        font-size: 14px;
+        line-height: 16px;
+        padding: 15px 40px;
+        font-weight: 700;
+        background-color: #ec411f;
+        color: #fff;
+    }
+
+    .ShopNowButton a:hover {
+        background-color: #f38de3;
+        color: #333;
+    }
+
+    .carousel .control-dots .dot.selected, .carousel .control-dots .dot:hover {
+        background: #ec411f;
+    }
+}
